@@ -1,44 +1,37 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 import { Link } from "react-router-dom"
 
-type TileProps = { label: string, to: string, start: number, end: number }
+type TileProps = { label: string, to: string }
 
-export default function Tile ({ label, to, start, end }: TileProps) {
+export default function Tile ({ index, label, to}: TileProps) {
 
     const tileRef = useRef<HTMLAnchorElement>(null);
 
-    const [ mousePosition, setMousePosition ] = useState<{ x: null | number, y: null | number }>({ x: 0, y: 0});
+    // const [ mousePosition, setMousePosition ] = useState<{ x: null | number, y: null | number }>({ x: 0, y: 0});
 
-    const updateMousePosition = useCallback((e: MouseEvent) => {
+    // const updateMousePosition = useCallback((e: MouseEvent) => {
 
-        // relative position of mouse when entering tile
-        const bounds = tileRef.current!.getBoundingClientRect();
-        const x = e.clientX - bounds.left;
-        const y = e.clientY - bounds.top;
-        setMousePosition({ x, y });
-    }, []);
-
-    useEffect(() => {
-        console.log(mousePosition);
-    }, [mousePosition])
+    //     // relative position of mouse when entering tile
+    //     const bounds = tileRef.current!.getBoundingClientRect();
+    //     const x = e.clientX - bounds.left;
+    //     const y = e.clientY - bounds.top;
+    //     setMousePosition({ x, y });
+    // }, []);
 
 
-    function handleMouseEnterAnimation () {
-        tileRef.current!.addEventListener('mousemove', updateMousePosition);
-    }
 
-    function handleMouseLeaveAnimation () {
-        tileRef.current!.removeEventListener('mousemove', updateMousePosition);
-    }
+    // function handleMouseEnterAnimation () {
+    //     tileRef.current!.addEventListener('mousemove', updateMousePosition);
+    // }
 
-    useEffect(() => {
-        tileRef.current!.style.perspective = `${Math.round(mousePosition.x!) / 10 }`
-    }, [mousePosition]);
+    // function handleMouseLeaveAnimation () {
+    //     tileRef.current!.removeEventListener('mousemove', updateMousePosition);
+    // }
+// onMouseLeave={handleMouseLeaveAnimation} onMouseEnter={handleMouseEnterAnimation}
 
-
-    return <Link ref={tileRef} to={to} viewTransition={true} className={`hover:rotate-${Math.round(mousePosition.x!) / 100 } col-start-${start} col-end-${end} tile tile-hover rounded-xl duration-100`} onMouseLeave={handleMouseLeaveAnimation} onMouseEnter={handleMouseEnterAnimation} >
-        <div className="flex flex-col justify-end p-2 h-full">
-            <span className="font-bold text-2xl">{label}</span>
+    return <Link ref={tileRef} to={to} viewTransition={true}  >
+        <div className="flex justify-start squares items-end p-4 tile">
+            <span className="text-shadow-foreground-secondary text-shadow">{label}</span>
         </div>
     </Link>
 }

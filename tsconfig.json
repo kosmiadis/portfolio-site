@@ -15,6 +15,7 @@
       "@hooks/*": ["./hooks/*"],
       "@api/*": ["./api/*"],
       "@utils/*": ["./utils/*"],
+      "@data": ["./data/*"],
     }
     
   }

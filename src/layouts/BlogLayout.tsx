@@ -9,9 +9,7 @@ export default function BlogLayout () {
         <div className="text-foreground-primary h-full">
             <Outlet />
         </div>   
-        <div className='py-4'>
-          <Footer />
-        </div>
+        <Footer />
     </div>
   </div>
 }

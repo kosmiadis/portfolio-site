@@ -3,7 +3,8 @@
 
 @theme {
     --color-main-bg: #050C22; /* oxford blue */
-    --color-secondary-bg: #FAFF00; /* yellow */
+    --color-secondary-bg: #FAFF00; /* yellow
+    /* --color-secondary-bg: #262138; */
     --color-accent: #6874E8; /*purple*/
     --color-foreground-primary: #FFFFFF;
     --color-foreground-secondary: #DADDFA;
@@ -46,10 +47,18 @@
 }
 
 .primary-paragraph {
-    @apply text-xl
+    @apply text-2xl
 }
 
 .secondary-paragraph {
     @apply text-lg
 }
+
+.tile {
+  @apply bg-accent brightness-80 font-mono h-[200px]
+}
+
+.tile-hover {
+    @apply hover:brightness-100
+} 
 

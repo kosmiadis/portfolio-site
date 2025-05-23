@@ -7,7 +7,7 @@ type SocialProps = {
 }
 
 export default function Social ({icon, href, tag}: SocialProps) {
-    return <a href={href} className="flex flex-col items-center w-min text-nowrap">
+    return <a target="_blank" href={href} className="flex flex-col items-center w-min text-nowrap">
         {icon}
         {tag && <span>{tag}</span>}
     </a>

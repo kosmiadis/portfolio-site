@@ -16,6 +16,7 @@
       "@hooks/*": ["./hooks/*"],
       "@api/*": ["./api/*"],
       "@utils/*": ["./utils/*"],
+      "@data": ["./data/*"],
     },
     /* Bundler mode */
     "moduleResolution": "bundler",

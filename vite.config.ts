@@ -14,7 +14,9 @@ export default defineConfig({
         '@pages': '/src/pages',
         '@layout': '/src/components/layout',
         '@layouts': '/src/layouts',
-        '@ui': '/src/components/ui'
+        '@ui': '/src/components/ui',
+        '@hooks': '/src/hooks',
+        '@data': '/src/data',
       }
     }
 })

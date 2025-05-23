@@ -1,5 +1,8 @@
+import Tiles from "@components/main/Tiles";
+import Page from "@components/ui/Page/Page";
+
 export default function Main () {
-    return <div>
-        Main
-    </div>
+    return <Page>
+        <Tiles />
+    </Page>
 }

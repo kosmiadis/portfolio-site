@@ -10,6 +10,8 @@
     "paths": {
       "@components/*": ["./components/*"],
       "@ui/*": ["./components/ui/*"],
+      "@layout/*": ["./components/layout/*"],
+      "@layouts/*": ["./layouts/*"],
       "@pages/*": ["./pages/*"],
       "@hooks/*": ["./hooks/*"],
       "@api/*": ["./api/*"],

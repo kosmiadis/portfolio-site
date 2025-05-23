@@ -3,10 +3,11 @@ import Header from "@components/layout/Header/Header";
 import { Outlet } from "react-router-dom";
 
 export default function CoreLayout () {
-    return <div className="min-h-full lines flex flex-col">
-    <div className="max-w-(--max-width) w-full laptop:m-auto min-h-screen flex-col-between">
+    return <div className="min-h-full star_sky  flex flex-col">
+      {/* desktop:h-full desktop:min-h-screen */}
+    <div className="max-w-(--max-width) w-full min-h-screen m-auto  flex-col-between">
       <Header />
-        <div className="text-foreground-primary h-full p-4">
+        <div className="text-foreground-primary min-h-full p-4">
             <Outlet />
         </div>
         <Footer />

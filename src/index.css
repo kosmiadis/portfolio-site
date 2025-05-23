@@ -8,13 +8,16 @@
     --color-foreground-primary: #FFFFFF;
     --color-foreground-secondary: #DADDFA;
     --default-font-family: "Lexend Deca", sans-serif;
-    --font-accent: "Cal Sans", sans-serif;
+    --font-cal-sans: "Cal Sans", sans-serif;
 
     /* breakpoints */
     --breakpoint-*: initial;
     --breakpoint-tablet: 640px;
     --breakpoint-laptop: 1024px;
     --breakpoint-desktop: 1440px;
+
+    /* MAX WIDTH OF THE APP */
+    --max-width: 1220px;
 }
 
 .flex-row-between {
@@ -26,6 +29,18 @@
 }
 
 .flex-center {
+    @apply flex justify-center items-center
+}
+
+.flex-col-center {
     @apply flex flex-col justify-center items-center
+}
+
+.important-heading {
+    @apply font-accent text-2xl text-foreground-primary
+}
+
+.secondary-heading {
+    @apply text-2xl
 }
 

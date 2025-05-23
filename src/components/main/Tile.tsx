@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react"
 import { Link } from "react-router-dom"
 
-type TileProps = { label: string, to: string }
+type TileProps = { index:number, label: string, to: string }
 
 export default function Tile ({ index, label, to}: TileProps) {
 
@@ -29,8 +29,8 @@ export default function Tile ({ index, label, to}: TileProps) {
     // }
 // onMouseLeave={handleMouseLeaveAnimation} onMouseEnter={handleMouseEnterAnimation}
 
-    return <Link ref={tileRef} to={to} viewTransition={true}  >
-        <div className="flex justify-start squares items-end p-4 tile">
+    return <Link ref={tileRef} to={to} viewTransition={true} className={index === 0 ? 'col-span-2' : ''}>
+        <div className={`flex justify-start squares items-end p-4 tile `}>
             <span className="text-shadow-foreground-secondary text-shadow">{label}</span>
         </div>
     </Link>

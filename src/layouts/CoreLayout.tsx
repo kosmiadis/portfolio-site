@@ -4,15 +4,12 @@ import { Outlet } from "react-router-dom";
 
 export default function CoreLayout () {
     return <div className="h-[100vh] bg-main-bg flex flex-col">
-    <div className="max-w-(--max-width) w-full m-auto h-5/6">
+    <div className="max-w-(--max-width) my-auto w-full m-auto h-5/6 flex-col-between">
       <Header />
-
-        <div>
+        <div className="text-foreground-primary">
             <Outlet />
         </div>      
-        
       <Footer />
     </div>
-
   </div>
 }

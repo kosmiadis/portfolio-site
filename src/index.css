@@ -58,12 +58,9 @@
 }
 
 .tile {
-  @apply brightness-40  hover:shadow-xl hover:border-2 shadow-secondary-bg/50 hover:brightness-100 rounded-xl hover:z-1 hover:skew-1 hover:scale-105 duration-100 font-mono font-bold text-2xl laptop:text-3xl h-[200px]
+  @apply brightness-40 before:w-[150px] before:-rotate-45 before:duration-200 before:h-[630px] before:left-0 before:top-0 before:opacity-0 hover:before:opacity-100 hover:before:left-18 before:absolute before:bg-linear-to-br before:from-accent/40 before:to-secondary-bg/20 hover:brightness-110 overflow-hidden before:z-[-1] z-20 rounded-2xl duration-200 font-mono font-bold text-2xl laptop:text-3xl h-[200px] bg-linear-to-br from-accent from-20% to-foreground-secondary hover:shadow-2xl shadow-accent
 }
 
-.tile-hover {
-    @apply hover:brightness-100
-} 
 
 .star_sky { 
   background-size: cover;

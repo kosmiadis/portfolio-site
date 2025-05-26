@@ -40,9 +40,11 @@ export const APP_DATA: APP_DATA_TYPE = {
            techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Typescript', 'Socket.io'],
            featuredImg: '/src/assets/chat.png', 
            images: [
-               '',
-               '',
-               '',
+               '/chat-app/chat_1.png',
+               '/chat-app/chat_2.png',
+               '/chat-app/chat_3.png',
+               '/chat-app/chat_4.png',
+               '/chat-app/chat_5.png',
            ],
            github: 'https://github.com/kosmiadis/ChatAppFrontend',
            tags: {
@@ -58,13 +60,15 @@ export const APP_DATA: APP_DATA_TYPE = {
             techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB', 'Typescript'],
             featuredImg: '/src/assets/url.png', 
             images: [
-               '',
-               '',
-               '',
-               '',
-               '',
-               '',
-               '',
+                '/url_shortener/url_1.png',
+                '/url_shortener/url_2.png',
+                '/url_shortener/url_3.png',
+                '/url_shortener/url_4.png',
+                '/url_shortener/url_5.png',
+                '/url_shortener/url_6.png',
+                '/url_shortener/url_7.png',
+                '/url_shortener/url_8.png',
+                '/url_shortener/url_9.png',
            ],
             github: 'https://github.com/kosmiadis/short-it',
             tags: {
@@ -80,7 +84,11 @@ export const APP_DATA: APP_DATA_TYPE = {
             techStack: ['Express.js', 'EJS', 'Node.js'],
             featuredImg: './src/assets/chalk59.png', 
             images: [
-                ''
+                '/chalk59/chalk59_1.png',
+                '/chalk59/chalk59_2.png',
+                '/chalk59/chalk59_3.png',
+                '/chalk59/chalk59_4.png',
+                '/chalk59/chalk59_5.png',
             ],
             github: 'https://github.com/kosmiadis/chalk59_website',
             tags: {
@@ -96,7 +104,11 @@ export const APP_DATA: APP_DATA_TYPE = {
             techStack: ['React.js', 'Node.js', 'Express.js', 'MongoDB'],
             featuredImg: '/src/assets/library.png', 
             images: [
-                ''
+                '/my_library/library_1.png',
+                '/my_library/library_2.png',
+                '/my_library/library_3.png',
+                '/my_library/library_4.png',
+                '/my_library/library_5.png',
             ],
             github: 'https://github.com/kosmiadis/MyLibrary',
             tags: {
@@ -113,7 +125,14 @@ export const APP_DATA: APP_DATA_TYPE = {
             techStack: ['React.js', 'TailwindCSS', 'Zustand'],
             featuredImg: '/src/assets/renovation.png', 
             images: [
-                ''
+                '/renovation_site/renovation_1.png',
+                '/renovation_site/renovation_2.png',
+                '/renovation_site/renovation_3.png',
+                '/renovation_site/renovation_4.png',
+                '/renovation_site/renovation_5.png',
+                '/renovation_site/renovation_6.png',
+                '/renovation_site/renovation_7.png',
+                '/renovation_site/renovation_8.png',
             ],
             github: 'https://github.com/kosmiadis/Renovation-Site/tree/main',
             tags: {

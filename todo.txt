@@ -1,4 +1,0 @@
-1. Colors and Fonts DONE
-2. Responsivenss (breakpoints, sm, md, lg)
-4. State Management (Zustand)
-5. Create Button UI component

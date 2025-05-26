@@ -1,7 +1,7 @@
 import { useRef } from "react"
 import { Link } from "react-router-dom"
 
-type TileProps = { index: number, label: string, to: string | undefined }
+type TileProps = { index: number, label: string, to: string }
 
 export default function Tile ({ label, to}: TileProps) {
 

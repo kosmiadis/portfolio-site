@@ -16,7 +16,7 @@ export type ProjectI = {
 
 
 type APP_DATA_TYPE = {
-    MainContent: { navigation: { label: string, to?: string }[] },
+    MainContent: { navigation: { label: string, to: string }[] },
     ProjectsPage: { projects: ProjectI[] },
     SkillsPage: { technologies: [] },
     

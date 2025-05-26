@@ -10,8 +10,7 @@ export default function NotFound () {
     const navigate = useNavigate();
 
     function handleClickGoHome () {
-        console.log('s')
-        navigate(-1);
+        navigate('/', { viewTransition: true });
     }
 
     return <Page>

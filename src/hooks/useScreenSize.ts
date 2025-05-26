@@ -10,8 +10,8 @@ export function useScreenSize () {
     })
 
     useEffect(() => {
-        function updateScreenSize (e: Event) {
-            setScreenSize({ width: e.target!.innerWidth, height: e.target!.innerHeight })
+        function updateScreenSize () {
+            setScreenSize({ width: window.innerWidth, height: window.innerHeight })
         }
         window.addEventListener('resize', updateScreenSize);
         return () => {

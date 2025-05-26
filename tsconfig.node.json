@@ -17,6 +17,8 @@
       "@utils/*": ["./utils/*"],
       "@data/*": ["./data/*"],
       "@animations/*": ["./animations/*"],
+      "@features/*": ["./features/*"],
+
     },
     /* Bundler mode */
     "moduleResolution": "bundler",

@@ -17,7 +17,9 @@ export default defineConfig({
         '@ui': '/src/components/ui',
         '@hooks': '/src/hooks',
         '@data': '/src/data',
-        '@animations': '/src/animations'
+        '@animations': '/src/animations',
+        '@features': '/src/features',
+
       }
     }
 })

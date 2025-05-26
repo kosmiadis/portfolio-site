@@ -21,7 +21,8 @@ export function useCarousel ({ slides }: useCarouselProps) {
             setSlide(0);
         }
         else {
-            setSlide(slide + 1)
+            console.log(slide);
+            setSlide(slide + 1);
         }
     }
 

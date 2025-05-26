@@ -9,7 +9,7 @@ type CarouselProps = { children?: ReactNode }
 export default function Carousel ({ children }: CarouselProps) {
     const childrenArray = Children.toArray(children)
     
-    const { slide, nextSlide, setSlide } = useCarousel({ slides: childrenArray.length});
+    const { slide, nextSlide, setSlide } = useCarousel({ slides: childrenArray.length - 1});
     
     useEffect(() => {
         const carouselInterval = setInterval(() => {

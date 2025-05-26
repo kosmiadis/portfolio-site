@@ -15,11 +15,12 @@
       "@pages/*": ["./pages/*"],
       "@hooks/*": ["./hooks/*"],
       "@api/*": ["./api/*"],
-      "@utils/*": ["./utils/*"],
       "@data/*": ["./data/*"],
       "@animations/*": ["./animations/*"],
       "@features/*": ["./features/*"],
       "@assets/*": ["./assets/*"],
+      "@util/*": ["./util/*"],
+
     },
     /* Bundler mode */
     "moduleResolution": "bundler",

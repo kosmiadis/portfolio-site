@@ -19,7 +19,7 @@ export default defineConfig({
         '@data': '/src/data',
         '@animations': '/src/animations',
         '@features': '/src/features',
-
+        '@util': '/src/util'
       }
     }
 })

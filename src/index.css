@@ -61,6 +61,29 @@
   @apply brightness-40 before:w-[150px] before:-rotate-45 before:duration-200 before:h-[630px] before:left-0 before:top-0 before:opacity-0 hover:before:opacity-100 hover:before:left-18 before:absolute before:bg-linear-to-br before:from-accent/40 before:to-secondary-bg/20 hover:brightness-110 overflow-hidden before:z-[-1] z-20 rounded-2xl duration-200 font-mono font-bold text-2xl laptop:text-3xl h-[200px] bg-linear-to-br from-accent from-20% to-foreground-secondary hover:shadow-2xl shadow-accent
 }
 
+.project-showcase {
+    @apply w-full hover:shadow-accent shadow-2xl rounded-2xl block duration-200 
+}
+
+.hover-animation {
+    @apply before:w-[150px] before:-rotate-45 before:duration-200 before:h-[630px] before:left-0 before:top-0 before:opacity-0 before:z-1 hover:before:opacity-100 hover:before:left-18 before:absolute before:bg-linear-to-br before:from-accent/40 before:to-secondary-bg/20
+}
+
+.bg-gradient {
+    @apply bg-linear-to-br from-accent/40 to-secondary-bg/20
+}
+
+.carousel {
+    @apply relative w-full flex flex-col gap-4 items-center;
+}
+
+.carousel-inner {
+    @apply flex gap-10 overflow-x-hidden w-full h-full  transform-3d 
+}
+
+.carousel-image {
+    @apply w-full mx-auto h-full rounded-2xl
+}
 
 .star_sky { 
   background-size: cover;

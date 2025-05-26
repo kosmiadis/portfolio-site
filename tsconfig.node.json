@@ -18,6 +18,7 @@
       "@data/*": ["./data/*"],
       "@animations/*": ["./animations/*"],
       "@features/*": ["./features/*"],
+      "@assets/*": ["./assets/*"],
 
     },
     /* Bundler mode */

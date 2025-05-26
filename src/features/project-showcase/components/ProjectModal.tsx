@@ -5,7 +5,6 @@ import { animationVariants } from "@animations/variants";
 import { EyeClosed } from "lucide-react";
 import Carousel from "@features/carousel/components/Carousel";
 import Badge from "@components/ui/Badge/Badge";
-import githubIcon from '@assets/github-mark.svg';
 import Social from "@components/ui/Social/Social";
 
 

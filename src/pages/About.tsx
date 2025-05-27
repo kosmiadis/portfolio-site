@@ -6,7 +6,7 @@ import AnimateChidren from "@components/ui/AnimateChildren/AnimateChildren";
 export default function About () {
     return <Page>
         <div className="flex flex-col mt-20 gap-10 px-5">
-            <h2 className="page-hero-text text-4xl ">About Me</h2>
+            <h2 className="page-hero-text text-4xl font-cal-sans ">About Me</h2>
 
             <div className="flex flex-col">
                 <div className="text-justify text-xl flex flex-col gap-10 laptop:gap-6">

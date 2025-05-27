@@ -1,6 +1,5 @@
 import { getIcon } from "@util/getIcons";
 import { getProjectImages } from "@util/imageLoader";
-import type { ReactElement } from "react";
 
 export type ProjectI = { 
     id: number, 
@@ -10,11 +9,6 @@ export type ProjectI = {
     featuredImg: string, 
     images: string[],
     github: string, 
-    tags: { 
-        frontend?: string[], 
-        backend?: string[] 
-    }
-    to: string;
 }
 
 
@@ -44,11 +38,6 @@ export const APP_DATA: APP_DATA_TYPE = {
            featuredImg: getProjectImages('chat-app')[0], 
            images: getProjectImages('chat-app'),
            github: 'https://github.com/kosmiadis/ChatAppFrontend',
-           tags: {
-               frontend: ['redix-ui', 'redux', 'redux-toolkit', 'tanstack-query', 'tailwindcss', 'socket.io-client', 'react-router-dom', 'lucide-react', 'sonner'],
-               backend: ['express', 'socket.io', 'mongoose', 'bcrypt', 'jwt', 'multer', 'cookie-parser', 'validator', 'crypto']
-           },
-           to: '/projects/real-time-chat-application'
         },
         { 
             id: 2,
@@ -58,11 +47,6 @@ export const APP_DATA: APP_DATA_TYPE = {
             featuredImg: getProjectImages('url_shortener')[0], 
             images: getProjectImages('url_shortener'),
             github: 'https://github.com/kosmiadis/short-it',
-            tags: {
-                frontend: ['tanstack-query', 'framer-motion', 'react-icons', 'react-router-dom', 'recharts.js', 'tailwindcss'],
-                backend: ['express', 'mongodb', 'bcrypt', 'cookie-parser', 'crypto', 'jwt']
-            },
-           to: '/projects/url-shortener'
         },
         { 
             id: 3,
@@ -72,11 +56,6 @@ export const APP_DATA: APP_DATA_TYPE = {
             featuredImg: getProjectImages('chalk59')[0], 
             images: getProjectImages('chalk59'),
             github: 'https://github.com/kosmiadis/chalk59_website',
-            tags: {
-                frontend: ['ejs', 'css3'],
-                backend: ['express', 'nodemailer', 'cookie-parser', 'crypto']
-            },
-           to: '/projects/furniture-restoration-landing-page'
         },
         { 
             id: 4,
@@ -86,11 +65,6 @@ export const APP_DATA: APP_DATA_TYPE = {
             featuredImg: getProjectImages('my_library')[0], 
             images: getProjectImages('my_library'),
             github: 'https://github.com/kosmiadis/MyLibrary',
-            tags: {
-                frontend: ['next-ui', 'redux', 'redux-toolkit', 'tanstack-query', 'framer-motion', 'react-router-dom', 'uuid', 'react-cookie'],
-                backend: ['express', 'mongodb', 'bcrypt', 'express-validator', 'cookie-parser', 'jwt', 'uui']
-            },
-           to: '/projects/my-library'
             
         },
         { 
@@ -101,10 +75,6 @@ export const APP_DATA: APP_DATA_TYPE = {
             featuredImg: getProjectImages('renovation_site')[0], 
             images: getProjectImages('renovation_site'),
             github: 'https://github.com/kosmiadis/Renovation-Site/tree/main',
-            tags: {
-                frontend: ['next-ui', 'redux', 'redux-toolkit', 'tanstack-query', 'framer-motion', 'react-router-dom', 'uuid', 'react-cookie'],
-            },
-           to: '/projects/simple-landing-page'
         }],
     },
     SkillsPage: {
@@ -132,7 +102,7 @@ export const APP_DATA: APP_DATA_TYPE = {
                 {tag: 'Node', icon: getIcon('nodejs')},
                 {tag: 'Express', icon: getIcon('express')},
                 {tag: 'Typescript', icon: getIcon('typescript')},
-                // {tag: 'EJS', icon: getIcon('typescript')},
+                {tag: 'EJS', icon: getIcon('ejs')},
 
             ], 
             experienceIn: [

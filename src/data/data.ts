@@ -1,4 +1,6 @@
+import { getIcon } from "@util/getIcons";
 import { getProjectImages } from "@util/imageLoader";
+import type { ReactElement } from "react";
 
 export type ProjectI = { 
     id: number, 
@@ -20,8 +22,7 @@ export type ProjectI = {
 type APP_DATA_TYPE = {
     MainContent: { navigation: { label: string, to: string }[] },
     ProjectsPage: { projects: ProjectI[] },
-    SkillsPage: { technologies: [] },
-    
+    SkillsPage: { technologies: { techStack: {tag: string, icon: string}[], frontend: {tag: string, icon: string}[] , backend: {tag: string, icon: string}[], experienceIn: {tag: string, icon: string}[] }},
 }
 
 export const APP_DATA: APP_DATA_TYPE = {
@@ -107,7 +108,42 @@ export const APP_DATA: APP_DATA_TYPE = {
         }],
     },
     SkillsPage: {
-        technologies: []
+        technologies: {
+            techStack: [
+                {tag: 'React', icon: getIcon('react')},
+                {tag: 'TailwindCSS', icon: getIcon('tailwindcss')},
+                {tag: 'MongoDB', icon: getIcon('mongodb')},
+                {tag: 'Redux', icon: getIcon('redux')},
+                {tag: 'Node', icon: getIcon('nodejs')},
+                {tag: 'Express', icon: getIcon('express')},
+                {tag: 'Typescript', icon: getIcon('typescript')},
+            ],
+
+            frontend: [
+                { tag: 'HTML5', icon: getIcon('html5')}, 
+                { tag: 'CSS3', icon: getIcon('css3')}, 
+                { tag: 'JavaScript', icon: getIcon('javascript')}, 
+                { tag: 'React', icon: getIcon('react')}, 
+                { tag: 'TailwindCSS', icon: getIcon('tailwindcss')}, 
+                {tag: 'SASS', icon: getIcon('sass')},
+                {tag: 'Typescript', icon: getIcon('typescript')},
+            ],
+            backend: [
+                {tag: 'Node', icon: getIcon('nodejs')},
+                {tag: 'Express', icon: getIcon('express')},
+                {tag: 'Typescript', icon: getIcon('typescript')},
+                // {tag: 'EJS', icon: getIcon('typescript')},
+
+            ], 
+            experienceIn: [
+                {tag: 'Python' , icon: getIcon('python')},
+                {tag: 'Django' , icon: getIcon('django')},
+                {tag: 'Java' , icon: getIcon('java')},
+                {tag: 'Docker' , icon: getIcon('docker')},
+                {tag: 'Bootstrap' , icon: getIcon('bootstrap')},
+                {tag: 'Wordpress', icon: getIcon('wordpress')}
+            ]
+        }
     },
     // AboutPage: {
     //     hero: 'A few words about me...',

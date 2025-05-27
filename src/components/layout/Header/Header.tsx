@@ -1,8 +1,22 @@
 import Social from '@ui/Social/Social'
+// import { useMotionValueEvent, useScroll } from 'motion/react'
+// import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header () {
-    return <header className='flex-row-between p-4'>
-        <h1 className='important-heading'>Vagelis Kosmiadis</h1>
+    // const [ scrollDirection, setScrollDirection ] = useState<'down' | 'up'>('down');
+    // const { scrollY } = useScroll();
+
+    // //detect when user scrolls up so that the header becomes visible again.
+    // useMotionValueEvent(scrollY, 'change', (current) => {
+    //     const diff = current - scrollY.getPrevious()!
+    //     setScrollDirection(diff > 0 ? 'down' : 'up');
+    // })
+
+
+    return <header className={`flex-row-between duration-200 p-4 z-100`}>
+        
+        <h1 className='important-heading'><Link to={'/'}>Vagelis Kosmiadis</Link></h1>
         <ul className='flex gap-4'>
             <li>
                 <Social 

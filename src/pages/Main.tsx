@@ -9,7 +9,7 @@ export default function Main () {
     const words = heroText.split(' ');
 
     return <Page>
-        <div>
+        <div className="h-full">
             <div className="flex flex-col mb-4">
                 <motion.h1 className="page-hero-text text-5xl" initial={animationVariants.fadeOut} animate={animationVariants.fadeIn} transition={animationVariants.transitions}>Hello There!</motion.h1>
                 <div>

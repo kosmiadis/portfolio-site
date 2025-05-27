@@ -14,7 +14,7 @@ export default function Header () {
     // })
 
 
-    return <header className={`flex-row-between duration-200 p-4 z-100`}>
+    return <header className={`flex-row-between duration-200 p-4`}>
         
         <h1 className='important-heading'><Link to={'/'}>Vagelis Kosmiadis</Link></h1>
         <ul className='flex gap-4'>

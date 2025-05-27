@@ -11,8 +11,6 @@ export type ProjectI = {
     github: string, 
 }
 
-
-
 type APP_DATA_TYPE = {
     MainContent: { navigation: { label: string, to: string }[] },
     ProjectsPage: { projects: ProjectI[] },
@@ -114,14 +112,5 @@ export const APP_DATA: APP_DATA_TYPE = {
                 {tag: 'Wordpress', icon: getIcon('wordpress')}
             ]
         }
-    },
-    // AboutPage: {
-    //     hero: 'A few words about me...',
-    //     about: {
-    //         summary: "I'm a self-taught web developer with a passion for building interactive, user-focused applications. I started learning programming at 14, fueled by curiosity and YouTube tutorials. Since then, I've developed a range of projects from real-time chat apps to full-stack tools like URL shorteners and digital bookshelves.",
-    //         techStack: "My main stack includes <b>React, Node.js, MongoDB, and TypeScript</b>, and I love working on both the <b>frontend and backend</b>. I’m especially interested in modern UI libraries, real-time communication with WebSockets, and building tools that are not just functional, but enjoyable to use.",
-    //         goals: "I'm currently preparing for the National Exams to <b>study Computer Science at the University of Thessaloniki</b>. When I'm not coding, I enjoy exploring design inspiration, reading tech blogs, working out, reading books or listening to music.",
-    //         closing: "I'm always open to feedback, collaboration, or just connecting with other developers!"
-    //     }
-    // }
+    }
 }

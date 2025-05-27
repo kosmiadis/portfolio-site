@@ -1,5 +1,6 @@
 import Footer from "@components/layout/Footer/Footer";
 import Header from "@components/layout/Header/Header";
+import PreLoadImages from "@components/PreLoadImages/PreLoadImage";
 import { Outlet } from "react-router-dom";
 
 export default function CoreLayout () {
@@ -12,5 +13,6 @@ export default function CoreLayout () {
         </div>
         <Footer />
     </div>
+    <PreLoadImages />
   </div>
 }

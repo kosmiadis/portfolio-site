@@ -16,9 +16,6 @@ export default function Projects () {
             <AnimateChildren>
                 {projects.map((project) => <ProjectShowcase key={project.id} {...project} />)}
             </AnimateChildren>
-            {/* <div className="w-full grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-3 gap-5">
-                {projects.map((project, index) => <motion.div initial={animationVariants.blur} animate={animationVariants.unblur} transition={{duration: animationVariants.transitions.duration, delay: 0.05 * index}}  key={project.id}><ProjectShowcase {...project} /></motion.div>)}
-            </div> */}
         </div>
         <ProjectModal />
     </Page>

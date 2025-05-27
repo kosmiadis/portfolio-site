@@ -2,8 +2,6 @@ import ProjectShowcase from "@components/projects/ProjectShowcase";
 import Page from "@components/ui/Page/Page";
 import { APP_DATA } from '@data/data.ts';
 import { useState } from "react";
-import { motion } from 'motion/react';
-import { animationVariants } from "@animations/variants";
 import ProjectModal from "@features/project-showcase/components/ProjectModal";
 import AnimateChildren from "@components/ui/AnimateChildren/AnimateChildren";
 

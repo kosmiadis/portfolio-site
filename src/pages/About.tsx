@@ -9,7 +9,7 @@ export default function About () {
             <h2 className="page-hero-text text-4xl font-cal-sans ">About Me</h2>
 
             <div className="flex flex-col">
-                <div className="text-justify text-xl flex flex-col gap-10 laptop:gap-6">
+                <div className="text-left text-xl flex flex-col gap-10 laptop:gap-6">
                     <AnimateChidren>
                     <ParagraphSection title="Who Am I?">
                         <p>I'm a self-taught web developer with a passion for building interactive, user-focused applications. I started learning programming at 14, fueled by curiosity and YouTube tutorials. Since then, I've developed few projects from real-time chat apps to full-stack tools like a URL shortener.</p>

@@ -11,7 +11,7 @@ export default function CV () {
             <motion.h1 initial={animationVariants.fadeOut}
                 animate={animationVariants.fadeIn}
                 transition={animationVariants.transitions}
-                className="text-4xl font-cal-sans"
+                className="text-6xl font-cal-sans"
             >Feel free to view or download my CV</motion.h1>
             
             <motion.div initial={animationVariants.fadeOut}

@@ -1,43 +1,15 @@
-import emailjs from '@emailjs/browser';
 import Page from "@components/ui/Page/Page"
-import Button from '@components/ui/Button/Button';
+import { motion } from 'motion/react';
+import { animationVariants } from "@animations/variants";
 
 export default function Contact () {
-    
-
-
-    function sendEmailResponse (e: React.FormEvent<HTMLFormElement>): void {
-        e.preventDefault();
-
-        const templateParams = {
-            name: 'Vagelis',
-            message: 'Check this out!',
-        };
-    
-        emailjs
-        .send(import.meta.env.EMAILJS_SERVICE_ID, import.meta.env.TEMPLATE_ID, templateParams, {
-          publicKey: 'YOUR_PUBLIC_KEY',
-        })
-        .then(
-          (response) => {
-            console.log('SUCCESS!', response.status, response.text);
-          },
-          (err) => {
-            console.log('FAILED...', err);
-          },
-        );
-    }
 
     return <Page>
-        <h2 className="important-heading">Contact</h2>
-
-        <form onSubmit={sendEmailResponse} className='w-full max-w-[400px]'>
-            <div className='bg-accent/40 flex flex-col'>
-                <input type='email' placeholder='Email'/>
-                <input type='text' placeholder='Message' />
-            </div>
-
-            <Button>Send</Button>
-        </form>
+        <div className="flex flex-col items-center gap-10">
+          <motion.h1 initial={animationVariants.fadeOut} animate={animationVariants.fadeIn} className="text-6xl font-cal-sans text-center">Feel free to ask me any questions!</motion.h1>
+          <motion.div initial={animationVariants.blur} animate={animationVariants.unblur} className="bg-accent shadow-[0px_0px_20px] shadow-accent w-full max-w-[500px] h-[120px] flex-center rounded-xl">
+            <a className="theme-button border-2" href="mailto:vageliskosmiadis@gmail.com">Send me a message</a>
+          </motion.div>
+        </div>
     </Page>
 }

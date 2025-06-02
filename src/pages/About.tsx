@@ -1,5 +1,5 @@
 import Page from "@components/ui/Page/Page"
-import MyImage from '@assets/pfp.png';
+import MyImage from '@assets/me.jpg';
 import ParagraphSection from "@components/about/ParagraphSection";
 import AnimateChidren from "@components/ui/AnimateChildren/AnimateChildren";
 

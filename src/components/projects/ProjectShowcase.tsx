@@ -11,7 +11,7 @@ export default function ProjectShowcase (project: ProjectI) {
 
     useEffect(() => {}, [openProject]);
 
-    return <div onClick={handleOpenProject} className="max-w-[500px] shadow-[0px_0px_20px] shadow-black/50 hover:scale-105 duration-200" >
+    return <div onClick={handleOpenProject} className="max-w-[500px] shadow-[0px_0px_20px] max-h-[250px] shadow-black/50 hover:scale-105 duration-200" >
         <button onClick={handleOpenProject} className="project-showcase overflow-hidden hover:cursor-pointer relative">
             <div className="flex flex-col relative">
                 <div className="flex-col-between overflow-hidden duration-200 h-full bg-linear-to-tl from-accent to-transparent relative">
